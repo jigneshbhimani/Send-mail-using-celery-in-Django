@@ -7,14 +7,12 @@ from send_emails_celery.settings import EMAIL_HOST_USER
 def send_mail_func(self):
     mail_subject = "Celery Mail",
     message = "Test mail sent by Django Celery",
-    to_mail = 'jignesh.bhimani@creolestudios.com',
 
     send_mail(
         subject = mail_subject,
         message= message,
         from_email= settings.EMAIL_HOST_USER,
-        recipient_list= [to_mail,],
+        recipient_list= ['jignesh.bhimani@creolestudios.com'],
         fail_silently= True,
     )
-
     return "Mail sent successfully using celery..."
