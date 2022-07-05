@@ -1,3 +1,15 @@
+```
+pip install django
+```
+
+```
+pip install celery
+```
+
+```
+pip install eventlet
+```
+
 **1)For Ubuntu:**
 
 -> Run the server (In Terminal-1) 
